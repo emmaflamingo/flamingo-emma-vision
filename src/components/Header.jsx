@@ -29,7 +29,7 @@ export default function Header() {
             <a href="#vision" className="text-gray-700 hover:text-flamingo transition font-medium">Vision</a>
             <a href="#platforms" className="text-gray-700 hover:text-flamingo transition font-medium">Plateformes</a>
             <a href="#strategy" className="text-gray-700 hover:text-flamingo transition font-medium">Stratégie</a>
-            <a href="#calendar" className="text-gray-700 hover:text-flamingo transition font-medium">Calendrier</a>
+            <a href="#calendrier" className="text-gray-700 hover:text-flamingo transition font-medium">Calendrier</a>
             <a href="#metrics" className="text-gray-700 hover:text-flamingo transition font-medium">Métriques</a>
           </div>
         </div>

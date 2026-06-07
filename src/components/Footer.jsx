@@ -18,10 +18,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Plateformes</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-pink-soft transition">YouTube</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">TikTok</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">Instagram</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">Facebook</a></li>
+              <li><a href="https://www.youtube.com/@flamingoemma" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">YouTube</a></li>
+              <li><a href="https://www.tiktok.com/@flamingo.emma6" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">TikTok</a></li>
+              <li><a href="https://www.instagram.com/flamingo.emma/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">Instagram</a></li>
+              <li><a href="https://www.facebook.com/people/FlamingoEmma/61589256928240/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">Facebook</a></li>
             </ul>
           </div>
 
@@ -29,8 +29,8 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Ressources</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#vision" className="hover:text-pink-soft transition">Vision</a></li>
-              <li><a href="#strategy" className="hover:text-pink-soft transition">Stratégie</a></li>
-              <li><a href="#calendar" className="hover:text-pink-soft transition">Calendrier</a></li>
+              <li><a href="#strategie" className="hover:text-pink-soft transition">Stratégie</a></li>
+              <li><a href="#calendrier" className="hover:text-pink-soft transition">Calendrier</a></li>
               <li><a href="#metrics" className="hover:text-pink-soft transition">Métriques</a></li>
             </ul>
           </div>
@@ -38,10 +38,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Connexion</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-pink-soft transition">Beacons</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">Fanvue</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">Email</a></li>
-              <li><a href="#" className="hover:text-pink-soft transition">Contact</a></li>
+              <li><a href="https://www.fanvue.com/emmaflamingo" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">Fanvue</a></li>
+              <li><a href="https://beacons.ai/emmaflamingo" target="_blank" rel="noopener noreferrer" className="hover:text-pink-soft transition">Beacons</a></li>
+              <li><a href="mailto:contact@flamingoemma.com" className="hover:text-pink-soft transition">Email</a></li>
+              <li><a href="#contact" className="hover:text-pink-soft transition">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -51,16 +51,16 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © 2026 Flamingo Emma. Tous droits réservés. | Stratégie créée par Manus AI
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-pink-soft transition">
+            <div className="flex gap-6">
+              <a href="https://www.instagram.com/flamingo.emma/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-soft transition text-2xl">
                 <span className="sr-only">Instagram</span>
                 📸
               </a>
-              <a href="#" className="text-gray-400 hover:text-pink-soft transition">
+              <a href="https://www.tiktok.com/@flamingo.emma6" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-soft transition text-2xl">
                 <span className="sr-only">TikTok</span>
                 🎵
               </a>
-              <a href="#" className="text-gray-400 hover:text-pink-soft transition">
+              <a href="https://www.youtube.com/@flamingoemma" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-soft transition text-2xl">
                 <span className="sr-only">YouTube</span>
                 📺
               </a>
