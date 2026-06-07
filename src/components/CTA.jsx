@@ -32,7 +32,8 @@ export default function CTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#"
+              href="/rapport_flamingo_emma.pdf"
+              download="Rapport_Flamingo_Emma_Strategie_Reseaux_Sociaux.pdf"
               className="px-8 py-4 bg-gradient-to-r from-pink-soft to-flamingo text-white rounded-lg font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
             >
               Télécharger le Rapport Complet
