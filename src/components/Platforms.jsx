@@ -48,16 +48,16 @@ export default function Platforms() {
   ]
 
   return (
-    <section id="platforms" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="platforms" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-pink-pale/20 to-transparent">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-pink-deep to-flamingo bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-black mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+            <span className="bg-gradient-to-r from-flamingo via-pink-deep to-rose-light bg-clip-text text-transparent">
               Analyse par Plateforme
             </span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Chaque plateforme joue un rôle spécifique dans l\'écosystème. Découvrez la stratégie optimisée pour chacune.
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto font-light">
+            Chaque plateforme joue un rôle spécifique dans l'écosystème. Découvrez la stratégie optimisée pour chacune.
           </p>
         </div>
 
@@ -65,50 +65,52 @@ export default function Platforms() {
           {platforms.map((platform, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl border border-pink-soft/30 overflow-hidden hover:shadow-xl transition"
+              className="group bg-white rounded-2xl border-2 border-pink-soft/30 overflow-hidden card-hover shadow-lg"
             >
-              <div className={`h-2 bg-gradient-to-r ${platform.color}`}></div>
+              <div className={`h-3 bg-gradient-to-r ${platform.color}`}></div>
               <div className="p-8">
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
-                    <span className="text-5xl">{platform.icon}</span>
+                    <span className="text-6xl animate-float">{platform.icon}</span>
                     <div>
-                      <h3 className="text-3xl font-bold text-gray-800">{platform.name}</h3>
-                      <p className="text-lg text-gray-600">{platform.role}</p>
+                      <h3 className="text-4xl font-black text-gray-800" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        {platform.name}
+                      </h3>
+                      <p className="text-lg text-gray-600 font-medium">{platform.role}</p>
                     </div>
                   </div>
-                  <span className="px-4 py-2 bg-pink-pale rounded-full text-sm font-semibold text-flamingo">
+                  <span className="px-4 py-2 bg-gradient-to-r from-pink-soft to-flamingo text-white rounded-full text-sm font-bold accent-text">
                     {platform.frequency}
                   </span>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 mt-6">
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                  <div className="p-4 bg-gradient-to-br from-pink-pale/30 to-rose-light/30 rounded-xl border border-pink-soft/20">
+                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2 text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
                       <span>💪</span> Forces
                     </h4>
                     <ul className="space-y-2">
                       {platform.strengths.map((strength, i) => (
-                        <li key={i} className="text-gray-700 flex items-start gap-2">
-                          <span className="text-flamingo mt-1">•</span>
+                        <li key={i} className="text-gray-700 flex items-start gap-2 font-medium">
+                          <span className="text-flamingo font-bold mt-1">✓</span>
                           <span>{strength}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                  <div className="p-4 bg-gradient-to-br from-flamingo/10 to-pink-deep/10 rounded-xl border border-flamingo/20">
+                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2 text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
                       <span>🎯</span> Focus
                     </h4>
-                    <p className="text-gray-700">{platform.focus}</p>
+                    <p className="text-gray-700 font-medium leading-relaxed">{platform.focus}</p>
                   </div>
 
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                  <div className="p-4 bg-gradient-to-br from-rose-light/30 to-peach/30 rounded-xl border border-rose-light/20">
+                    <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2 text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
                       <span>📊</span> Objectif 30j
                     </h4>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 font-bold text-lg">
                       {platform.name === 'YouTube' && '+100h de visionnage'}
                       {platform.name === 'TikTok' && '+500 abonnés'}
                       {platform.name === 'Instagram' && '+200 abonnés'}
